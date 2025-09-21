@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# Remittra Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive landing page for a fictional fintech product, built with **React**, **TypeScript**, and **TailwindCSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+Remittra is designed as a modern fintech concept. The landing page highlights its value proposition with a hero section, feature highlights, and a footer that ties it together. It’s fully responsive and built mobile-first.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Key Sections
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Hero**: Cyan blue background with tagline and call-to-action.
+* **Features**: Four feature cards arranged in a responsive grid.
+* **Footer**: Brand name, navigation links, and social media icons.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Setup
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Tam-Mamofedee/remittra-landing-page.git
+cd remittra-landing-page
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Install Packages
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Start Development
+
+```bash
+npm run dev
+```
+
+Visit the localhost URL that appears in your terminal.
+
+---
+
+## Built With
+
+* **React + TypeScript** for components and type safety
+* **TailwindCSS** for styling
+* **Vite** as the development toolchain
+
+---
+
+## Project Layout
+
+```
+src/
+ ├── components/
+ │    ├── LandingPage.tsx  # Complete landing page
+ │    ├── FeatureCard.tsx  # Reusable feature card
+ │    ├── CTAButton.tsx    # Call-to-action button
+ │    └── Footer.tsx       # Footer section
+ ├── App.tsx
+ ├── main.tsx
+ └── index.css
+```
+
+---
+
+##Live Demo Link
+
+* Link goes here
+
